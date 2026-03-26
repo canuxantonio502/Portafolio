@@ -1,0 +1,40 @@
+html {
+    font-family: Arial, sans-serif;
+    background-color: #32437A;
+    margin: 0; 
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.banner {
+    background-image: url("./banner.png");
+    display: block;     
+    width: 100%;        
+    height: auto;
+}
