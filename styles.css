@@ -1,40 +1,72 @@
 html {
     font-family: Arial, sans-serif;
-    background-color: #32437A;
+    background-color: #1a0f2e;
     margin: 0; 
     padding: 20px;
 }
 
-h1 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 0.5em;
-}
-
 p {
-    font-size: 1.2em;
-    color: #666;
+    font-size: 1.3em;
+    color: #ffffff;
     line-height: 1.5;
     margin-bottom: 1em;
 }
 
+h1 {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 0.5em;
+}
+
 h2 {
     font-size: 1.8em;
-    color: #333;
+    color: #ffffff;
     margin-top: 1.5em;
     margin-bottom: 0.5em;
 }
 
 h3 {
     font-size: 1.4em;
-    color: #333;
+    color: #ffffff;
     margin-top: 1.5em;
     margin-bottom: 0.5em;
 }
 
-.banner {
-    background-image: url("./banner.png");
-    display: block;     
-    width: 100%;        
-    height: auto;
+li {
+    font-size: 1.1em;
+    color: #ffffff;
+    margin-bottom: 0.5em;
+}
+
+#banner {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  background: black;
+  color: white;
+  padding: 10px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+#banner img {
+  width: 150px; 
+  height: 150px;
+  border-radius: 30%; 
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+#welcome {
+    background-color: #222222;
+    padding: 10px;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  transition: transform 0.3s ease;
+}
+
+#banner img:hover {
+  transform: scale(1.1);
 }
