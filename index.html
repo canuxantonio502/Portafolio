@@ -4,30 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio - Antonio Canux</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <div id="banner">
-        <img src="./foto.jpeg" alt="Foto de perfil de Antonio Canux" id="profile-pic">
+        <img src="./css/foto.jpeg" alt="Foto de perfil de Antonio Canux" id="profile-pic">
             <div align="center" class="name">
                 <h1>Antonio Canux</h1>
                 <h2>Portafolio</h2>
             </div>
-        <img src="./logo1.png" alt="Logo de perfil de Antonio Canux" id="profile-pic"> 
+        <img src="./css/logo1.png" alt="Logo de perfil de Antonio Canux" id="profile-pic"> 
     </div>
     <div id="welcome">
-        <p align="center">Bienvenido a mi portafolio. Aquí encontrarás algunos de mis proyectos y logros más destacados.</p>
+        <nav id="links" align="center">
+            <div><a href="#inicio">Inicio</a></div>
+            <div><a href="#presentacion">Presentación</a></div>
+            <div><a href="#sobremi">Sobre mí</a></div>
+            <div><a href="#habilidades">Habilidades</a></div>
+            <div><a href="#proyectos">Proyectos</a></div>
+            <div><a href="#contacto">Contacto</a></div>
+        </nav>
     </div>
     <br>
-    <div class="titles"><h3>Proyectos Destacados</h3></div>
+    <section>
+        <div class="titles" id="presentacion"><h3>Presentación</h3></div>
+        <div class="present"><p align="center">¡Hola! Soy Antonio Canux, un apasionado desarrollador web con experiencia
+            en HTML, CSS y JavaScript. Me encanta crear sitios web atractivos y funcionales que brinden
+            una excelente experiencia de usuario. En este portafolio, encontrarás algunos de mis proyectos
+            más destacados, así como información sobre mis habilidades y logros. ¡Gracias por visitar mi portafolio!</p> </div>
+    </section>
+    <br>
+    <section>
+        <div class="titles" id="sobremi"><h3>Sobre mí</h3></div>
+        <div class="present">
+            <img src="./css/foto2.png" alt="Antonio Canux" id="sobremi-img">
+            <p align="center">Soy desarrollador web enfocado en crear experiencias digitales que no
+                solo funcionen bien, sino que también se vean bien. Trabajo con Python, HTML, CSS y JavaScript,
+                combinando lógica y creatividad en cada proyecto.
+                Fuera del código, me apasiona la música, la fotografía y el fútbol, cosas que influyen
+                bastante en mi forma de pensar y crear. Me gusta aprender constantemente, experimentar
+                y mejorar en cada proyecto que realizo.
+                Disfruto involucrarme en todo el proceso de desarrollo, desde la idea hasta el resultado
+                final, siempre buscando que cada sitio tenga calidad, estilo y una buena experiencia
+                para quien lo usa.</p>
+        </div>
+    </section>
+    <br>
+    <section>
+        <div class="titles" id="habilidades"><h3>Habilidades</h3></div>
+        <img src="icons/js.svg" alt="JavaScript">
+        <ul>
+            <li>HTML: Experiencia en la creación de estructuras web semánticas y accesibles.</li>
+            <li>CSS: Habilidad para diseñar sitios web atractivos y responsivos utilizando CSS.</li>
+            <li>JavaScript: Capacidad para agregar interactividad y funcionalidad a los sitios web con JavaScript.</li>
+            <li>Python: Conocimientos en programación con Python, especialmente en el desarrollo web con frameworks como Django o Flask.</li>
+            <li>Diseño Web: Capacidad para crear diseños visualmente atractivos y funcionales.</li>
+            <li>Optimización Web: Habilidad para optimizar el rendimiento de los sitios web y mejorar la experiencia del usuario.</li>
+        </ul>
+    </section>
+    <br>
+    <div class="titles" id="proyectos"><h3>Proyectos Destacados</h3></div>
     <section class="proyectos">
         <div class="card">
-        <img src="./proyecto1 .jpg" alt="Proyecto 1" id="p1i">
-            <div class="contenido">
+            <img src="./css/proyecto1.jpg" alt="Proyecto 1" id="p1i">
+            <div align="center" class="contenido">
                 <h3>Página para festival de música</h3>
                 <p>
-                Breve descripción del proyecto. Explica qué hace, qué problema resuelve
-                y por qué es importante.
+                    La página presenta toda la información necesaria de forma clara
+                    y atractiva, incluyendo el line-up, horarios, ubicación y venta de entradas. El desarrollo
+                    de la página se realizó utilizando HTML y CSS, asegurando una experiencia de usuario fluida y visualmente atractiva.
                 </p>
                 <div class="tecnologias">
                     <span>HTML</span>
@@ -35,41 +80,43 @@
                     <span>JavaScript</span>
                 </div>
                 <div class="botones">
-                    <a href="https://github.com/tuusuario/proyecto" target="_blank" class="button">
+                    <a href="https://github.com/canuxantonio502/repaso/blob/master/index.html" target="_blank" class="button">
                     Ver Código
                     </a>
-                    <a href="https://tu-proyecto-demo.com" target="_blank" class="button">
+                    <a href="https://canuxantonio502.github.io/repaso/" target="_blank" class="button">
                     Ver Proyecto
                     </a>
                 </div>
             </div>
         </div>
         <div class="card">
-            <img src="./img/proyecto1.png" alt="Proyecto 1">
-                <div class="contenido">
-                    <h3>Elaboración de portafolio personal</h3>
-                    <p>
-                    Breve descripción del proyecto. Explica qué hace, qué problema resuelve
-                    y por qué es importante.
-                    </p>
-                    <div class="tecnologias">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="botones">
-                        <a href="https://github.com/tuusuario/proyecto" target="_blank" class="button">
-                        Ver Código
-                        </a>
-                        <a href="https://tu-proyecto-demo.com" target="_blank" class="button">
-                        Ver Proyecto
-                        </a>
-                    </div>
+            <img src="./css/proyecto2.png" alt="Proyecto 1" id="p1i">
+            <div align="center" class="contenido">
+                <h3>Creación de portafolio profesional</h3>
+                <p>
+                En este proyecto, desarrollé un portafolio profesional utilizando HTML y CSS.
+                El portafolio está diseñado para mostrar mis habilidades, proyectos y logros de manera clara y atractiva.
+                Implementé un diseño responsivo para asegurar que el portafolio se vea bien en dispositivos móviles y de escritorio.
+                </p>
+                <div class="tecnologias">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Python</span>
+                </div>
+                <div class="botones">
+                    <a href="https://github.com/canuxantonio502/repaso/blob/master/REPASO.html" target="_blank" class="button">
+                    Ver Código
+                    </a>
+                    <a href="https://canuxantonio502.github.io/repaso/" target="_blank" class="button">
+                    Ver Proyecto
+                    </a>
                 </div>
             </div>
+        </div>
     </section>
 
-    <h3>Logros</h3>
+    <h3 id="logros">Logros</h3>
     <ul>
         <li>Logro 1: Descripción breve del logro 1.</li>
         <li>Logro 2: Descripción breve del logro 2.</li>

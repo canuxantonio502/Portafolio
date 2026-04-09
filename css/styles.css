@@ -3,7 +3,7 @@ html {
     background-color: #0f172a;
     background-image: url();
     margin: 0; 
-    padding: 20px;
+    padding: 30px 80px;
 }
 
 p {
@@ -80,7 +80,7 @@ li {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 0px 2px;
   cursor: pointer;
   border-radius: 5px;
 }
@@ -92,19 +92,61 @@ li {
   75% {transform: rotate(0.5deg)}
   100% {transform: rotate(0deg)}
 }
-#p1i {
+#p1i, #p2i {
   width: 300px;
   height: 200px;
+  object-fit: cover;
+  margin: 10px;
+  border: 1px solid white;
+  border-radius: 15px;
 }
-.card {
+.card, .present {
   border: 1px solid white;
   border-radius: 15px;
   padding: 15px;
+  display: flex;
+  justify-content:flex-start;
 }
 .titles {
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 0px;
+  justify-content: center;
+  text-align: center;
+  background-color: #222222;
+}
+.card p {
+  text-align: left;
+  margin-left: 15px;
+  margin-bottom: 0;
+}
+#buttons ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+#links div {
+  align-items: center;
   border: 1px solid white;
   border-radius: 15px;
-  width: flex;
-  padding: 0;
-  text-align: center;
+  padding: 10px;
+  display: inline-flex;
+}
+#links div a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+}
+#links div:hover {
+  box-shadow: 0 2px 4px white;
+}
+#sobremi-img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10%;
+  margin-right: 20px;
+  border: 1px solid white;
 }
