@@ -5,7 +5,14 @@ html {
     margin: 0; 
     padding: 30px 80px;
 }
-
+body {
+  overflow-x: hidden;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 p {
     font-size: 1.3em;
     color: #ffffff;
@@ -47,9 +54,10 @@ li {
   display: flex;
   justify-content: space-between; 
   align-items: center; 
+  flex-wrap: wrap;
   background: black;
   color: white;
-  padding: 10px;
+  padding: 20px;
   border-radius: 15px 15px 0px 0px;
   border-color: #ffffff;
   border: 1px solid;
@@ -96,6 +104,40 @@ li {
   50% {transform: rotate(-1deg)}
   75% {transform: rotate(0.5deg)}
   100% {transform: rotate(0deg)}
+}
+@media (max-width: 768px) {
+  html {
+    padding: 20px;
+  }
+  #banner {
+    flex-direction: column;
+    text-align: center;
+  }
+  #banner img {
+    margin-bottom: 15px;
+    width: 80px;
+    height: 80px;
+    margin: 10px 0;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+  #habilidades {
+    flex-direction: column;
+    text-align: center;
+  }
+  #habilidades img {
+    margin-top: 20px;
+    width: 100px;
+  }
+  .present {
+    flex-direction: column;
+    text-align: center;
+  }
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 #p1i, #p2i {
   width: 300px;
@@ -211,6 +253,12 @@ input, select, textarea {
 .present {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 
+}
+#habilidades {
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .animation {
   position: relative;
