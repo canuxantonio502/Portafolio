@@ -60,11 +60,13 @@ li {
   height: 150px;
   border-radius: 50%; 
   object-fit: cover;
+  border: 1px solid white;
   /*animation: distorsion 0.5s infinite;*/
 }
 #banner img:hover {
   transition: 0.5s ease;
   transform: scale(1.1);
+  border: 1px solid gold;
   box-shadow: rgb(29, 31, 31) 0 0 10px, rgb(159, 161, 161) 0 0 15px;
 }
 #welcome {
@@ -98,7 +100,7 @@ li {
 #p1i, #p2i {
   width: 300px;
   height: 200px;
-  object-fit: cover;
+  object-fit:cover;
   margin: 10px;
   border: 1px solid white;
   border-radius: 15px;
@@ -200,3 +202,16 @@ input, select, textarea {
   padding: 5px;
   width: 30%;
 }
+.present {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+#habilidades {
+  justify-content: space-between; 
+}
+#skills {
+  width: 15%;
+  object-fit:contain;
+  border-radius: 50%;
+  padding: 5px 40px 5px 5px;
+}
+
