@@ -146,6 +146,10 @@ li {
     text-align: center;
     justify-content: center;
   }
+  input {
+    max-width: 75%;
+    width: 100%;
+  }
 }
 #p1i, #p2i {
   width: 300px;
@@ -304,4 +308,11 @@ input, select, textarea {
   25% { opacity: 1; }
   30% { opacity: 0; }
   100% { opacity: 0; }
+}
+#footer {
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  color: #666565;
+  font-size: small;
 }
